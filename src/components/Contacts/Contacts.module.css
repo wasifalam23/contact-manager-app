@@ -1,0 +1,44 @@
+.details-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 4.8rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.phone,
+.email,
+.delete {
+  font-size: 1.6rem;
+}
+
+.delete {
+  color: #099268;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.delete:hover {
+  color: #229d77;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .details-box {
+    gap: 4px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .phone,
+  .email,
+  .delete {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,89 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.input-box:not(:last-of-type) {
+  margin-bottom: 3.2rem;
+}
+
+.input-box label {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.input-box input {
+  font-size: 2rem;
+  padding: 0.7rem 1.2rem;
+  width: 70%;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  border-radius: 7px;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  margin-top: 4.8rem;
+  gap: 4.8rem;
+}
+
+.btn {
+  padding: 1.4rem 4.8rem;
+  background: none;
+  border: none;
+  background-color: #099268;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 7px;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: #229d77;
+  cursor: pointer;
+}
+
+.manage-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222;
+}
+
+@media only screen and (max-width: 50em) {
+  .input-box input {
+    width: 83%;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .input-box input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btn-box {
+    align-items: center;
+    margin-top: 4.8rem;
+    text-align: center;
+  }
+
+  .manage-text {
+    font-size: 2rem;
+  }
+}

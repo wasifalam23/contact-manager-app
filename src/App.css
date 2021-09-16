@@ -1,0 +1,90 @@
+.main-container {
+  max-width: 120rem;
+  margin: 15rem auto;
+  padding: 0 4.8rem;
+}
+
+.container {
+  border-radius: 10px;
+  overflow: hidden;
+  /* border: 1px solid #099268; */
+}
+
+.header {
+  background-color: #099268;
+  padding: 2.4rem 0 2.4rem 4rem;
+}
+
+.heading {
+  font-size: 3.6rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.contact-box {
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  grid-template-rows: 40rem;
+  padding: 4.8rem 4.8rem 4.8rem 7rem;
+  background-color: #e6f4f0;
+}
+
+.contact-form {
+  border-right: 2px solid #dad9d9;
+  padding-top: 2.4rem;
+}
+
+.contact-list {
+  padding: 3.2rem 2.4rem 3.2rem 4.8rem;
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 50em) {
+  .main-container {
+    padding: 0 3.2rem;
+  }
+
+  .contact-box {
+    padding: 3.2rem 4.8rem 4.8rem 5.2rem;
+    grid-template-columns: 60fr 40fr;
+  }
+
+  .contact-form {
+    padding-top: 1.2rem;
+  }
+
+  .contact-list {
+    padding: 3.2rem 2.4rem 3.2rem 3.2rem;
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+
+  .contact-form {
+    border-right: none;
+  }
+
+  .contact-list {
+    padding: 6.4rem 0;
+    overflow: auto;
+    text-align: center;
+    justify-self: center;
+    overflow: visible;
+  }
+}
