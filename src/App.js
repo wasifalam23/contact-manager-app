@@ -6,7 +6,6 @@ import './App.css';
 
 const App = () => {
   const [contact, setContact] = useState([]);
-  console.log(contact);
 
   const SaveContactDataHandler = (contactData) => {
     setContact((prevData) => [

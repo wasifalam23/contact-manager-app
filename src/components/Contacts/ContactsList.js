@@ -2,7 +2,6 @@ import React from 'react';
 import Contacts from './Contacts';
 
 const ContactList = (props) => {
-  // console.log(props.newContact);
   return (
     <ul>
       {props.newContact.map((contact) => (
